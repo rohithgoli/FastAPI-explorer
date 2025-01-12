@@ -133,3 +133,32 @@ Query Parameters
 +   Providing optional parameters using Optional[typehint] ==>sort: Optional[str] = None
 +   FastAPI is smart enough to detect parameters from path
 
+*************************
+Request Body
+************************
++   To declare a request body, use Pydantic models
++   Import Pydantic's BaseModel
+        from pydantic import BaseModel
++   Create data model --> we declare our data model as a class that inherits from BaseModel.
+    Use standard python types for all the attributes.
+        class Item(BaseModel):
+            name: str
+            description: str | None = None
+            price: float
+            tax: float | None = None
++   Declare it as a parameter -->
+    To add it to our path operation, declare it the same way we declared path and query parameters
+        async def create_item(item: Item):
++   The function parameters will be recognized as follows:
+    * If the parameter is also declared in the path, it will be used as a path parameter
+    * If the parameter is of a singular type (like int, float, str, bool, etc..) it will be interpreted as a query parameter
+    * If the parameter is declared to be of the type of a Pydantic model, it will be interpreted as a request body
+
+***************************
+Debugging
+***************************
++   Application stops at Breakpoint & we get information at that Breakpoint
+
+***************************
+Pydantic Schemas
+***************************
