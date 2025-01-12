@@ -101,6 +101,7 @@ Course Intro
 ******************************
 Path Parameters
 ******************************
+fastapi.tiangolo.com/tutorial
 
 + In FastAPI, to have dynamic parameters in path --> @app.get('/blog/{id}')
     We can define the type for the parameter using typehints --> def show(id: int):
@@ -117,4 +118,18 @@ Path Parameters
             it is good to define route @app.get('/blog/unpublished') followed by Dynamic routes @app.get('/blog/{id}')
             else we may encounter parsing error while accessing '/blog/unpublished'
 
+***********************
+API Docs
+***********************
+   + /docs ==> Swagger UI
+
+
+************************
+Query Parameters
+************************
++   Other function parameters that are not part of path parameters are interpreted as "query" parameters
++   Significance of typehints for parameters
++   Providing default values to parameters
++   Providing optional parameters using Optional[typehint] ==>sort: Optional[str] = None
++   FastAPI is smart enough to detect parameters from path
 
