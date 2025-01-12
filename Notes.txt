@@ -162,3 +162,8 @@ Debugging
 ***************************
 Pydantic Schemas
 ***************************
++   We can observe creation of Project structure
+    |--blog
+        |--__init__.py
+        |--main.py
+        |--schemas.py
