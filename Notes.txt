@@ -167,3 +167,32 @@ Pydantic Schemas
         |--__init__.py
         |--main.py
         |--schemas.py
+
+***************************
+Database-Connection
+***************************
++   Create a database.py file & setup the requirements for database connection
++   SQLAlchemy 2.0 Docs --> https://docs.sqlalchemy.org/en/20/tutorial/index.html#unified-tutorial
+
+***************************
+Create Model and Tables
+Store blog to database
+Get blog from database
+***************************
+
+***************************
+Exception & Status Code
+***************************
++   status_code is a parameter of the decorator method(get, post, put, etc.)
++   We can use the convenience variables from fastapi.status
++   Using Response parameter in path operation function to return custom status code in response
++   Instead of the above where we are using Response parameter, we can use HTTPException of fastapi
+        from fastapi import HTTPException
+
+        raise HTTPException(status_code=404, detail="User not found")
+
+**************************
+Delete a Blog
+Update a Blog
+CRUD using fastapi
+**************************
