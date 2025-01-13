@@ -196,3 +196,25 @@ Delete a Blog
 Update a Blog
 CRUD using fastapi
 **************************
+
+**************************
+Response Model
+**************************
+
+**************************
+Create User
+**************************
+
+**************************
+Hash Password
+Show User
+**************************
+
+**************************
+Using Doc Tags
+**************************
++   All the endpoints are under default
++   We can show the endpoints under different tags
+
+
+
