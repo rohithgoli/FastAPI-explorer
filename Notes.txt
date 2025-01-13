@@ -222,3 +222,11 @@ Relationship
 +   Every Blog must belong to a User, How to create relationship ?
 +   We can create relationships from Blog to User & User to Blog
 
+**************************
+API Router
+**************************
++   As application is growing, its better to manage the app in structured way
++   If we want to have the path operations related to Users separated from the rest of the code, to be organized,
+    but it is still part of the same FastAPI application/web API (it's part of the same Python Package)
+        ==> We can create the path operations for that module using APIRouter
+
