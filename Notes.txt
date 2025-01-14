@@ -230,3 +230,16 @@ API Router
     but it is still part of the same FastAPI application/web API (it's part of the same Python Package)
         ==> We can create the path operations for that module using APIRouter
 
+**************************
+API Router path operators
+**************************
++   After restructuring our app, Inside route files, still we are repeating tags for every path,
+    How about modifying it & specifying it at only single place for a router
++   We can also apply prefix a name for the routes
+
+**************************
+Blog & User repository
+**************************
++   Responsibility of Router is to give the path & then return something
+    So, it is good to extract all the service logic in a dedicated file
+
