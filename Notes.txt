@@ -257,4 +257,6 @@ Authentication
 *****************************
 Routes behind Authentication
 *****************************
-+
++   we will be using fastapi.security OAuth2PasswordBearer
++   Whenever we need to move any route behind authentication,
+    we need to mention that it depends on get_current_active_user
