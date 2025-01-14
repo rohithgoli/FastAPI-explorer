@@ -243,3 +243,18 @@ Blog & User repository
 +   Responsibility of Router is to give the path & then return something
     So, it is good to extract all the service logic in a dedicated file
 
+**************************
+Login & Verify Password
+**************************
++   Create a route to login the user with email & password
+    Security --> OAuth2 with Password (and hashing), Bearer with JWT tokens
+
+**************************
+Authentication
+**************************
++   Generate Access Token for Authentication
+
+*****************************
+Routes behind Authentication
+*****************************
++
